@@ -12,8 +12,8 @@ const topics = document.querySelector(".topics")
 
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
     .then ((data) => {
-        //successful 
-        console.log("returned data and data type:", data.constructor.name, data); 
+        // successful 
+        // console.log("returned data and data type:", data.constructor.name, data); 
 
         const topicsArray = data.data.topics; 
         // console.log("topics array:", data.data.topics.constructor.name, topicsArray); 
